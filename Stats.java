@@ -1,6 +1,7 @@
 public class Stats {
     public static void main(String[] args) {
-        if (args == null && args.length == 0) {
+        if (args.length == 0) {
+            System.err.println("Usage: java Stats <numbers>");
             return;
         }
 
@@ -33,7 +34,8 @@ public class Stats {
         System.out.println("The smallest is " + min);
 
         double avg = sum / count;
-        System.out.println("The average is ");
+        System.out.print("The average is ");
         System.out.printf("%.2f", avg);
+        System.out.println();
     }
 }
