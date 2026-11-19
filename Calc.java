@@ -8,7 +8,8 @@ public class Calc {
             System.err.println("Usage: java Calc <add|mult|max|min> <numbers>");
             return;
 		}
-		if (!args.contains("add", "mult", "max", "min")) {
+		String op = "add" + "mult" + "max" + "min";
+		if (!args.contains()) {
             System.err.println("Unknown operation: " + in);
             return;
         }
